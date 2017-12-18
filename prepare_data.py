@@ -2,14 +2,13 @@ import time
 import numpy as np
 from rtlsdr import RtlSdr
 import random, string, math
-
 import scipy.signal as signal
 
 
 def read_samples(sdr, freq):
     sdr.center_freq = freq
     time.sleep(0.04)
-    return sdr.read_samples(sample_rate * 0.25)  # sample for 1/4 sec
+    return sdr.read_samples(sample_rate * 0.25)
 
 
 def plot_samples(iq_samples):
@@ -79,4 +78,4 @@ for i in range(0, 1000):
     np.save(filename, iq_samples)
     if not (i % 10): print(i / 10, "%")
 
-# Now do not forget to move about 20% of samples to their corresponding folders /testing_data/***/
+# Now do not forget to move about 20% of samples to their corresponding folders /testing_data/CLASS_LABEL/
