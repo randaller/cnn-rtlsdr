@@ -13,6 +13,7 @@ If you do not have modern NVIDIA graphics card, remove the following line from r
 Run anaconda prompt, change dir to C:\rtlsdr, then run: pip install -r requirements.txt
 
 Only for CUDA version of Tensorflow, if you have installed CPU version, skip these steps:
+	
 	1. Download and install CUDA 8 Toolkit: https://developer.nvidia.com/cuda-80-ga2-download-archive
 
 	2. Download CUDNN for Toolkit 8. https://developer.nvidia.com/cudnn
@@ -42,7 +43,11 @@ python predict_scan.py --help
 ### TRAIN YOUR OWN DATA
 
 To train your own model, edit the file [prepare_data.py] to set own frequencies and ppm level (lines 40-41).
-Then to obtain some samples run: python prepare_data.py
+
+Then to obtain some samples run:
+'''
+python prepare_data.py
+'''
 
 Now do not forget to move about 20% of samples from /training_data/***/ folders to their corresponding folders in /testing_data/***/
 
