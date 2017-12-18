@@ -61,12 +61,10 @@ E.g., if you want to train only WFM and OTHER classes, delete everything, except
 - /testing_data/other/
 
 It is better to obtain different samples of signals at different frequencies, gain levels etc.
-Instead of recording, you may prefer to download mine train_data.zip file with samples here.
-Delete [/training_data] & [/testing_data] folders and unpack zip file.
 	
 Finally, we may now run training (of course, we are still inside anaconda prompt):
 ```
 python train.py
 ```
 
-Best decision is to stop the training [ctrl+c], when validation loss become 0.04 - 0.01 or below.
+Best decision is to stop the training [ctrl+c], when validation loss becomes 0.05 - 0.01 or below.
