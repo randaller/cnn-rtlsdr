@@ -8,7 +8,10 @@ Unpack software archive into some folder, e.g. C:\rtlsdr
 Go to https://www.anaconda.com/download/ and choose Python 3.6 version, 64-Bit Graphical Installer
 or download directly: https://repo.continuum.io/archive/Anaconda3-5.0.1-Windows-x86_64.exe
 
-If you do not have modern NVIDIA graphics card, remove the following line from requirements.txt file: tensorflow-gpu==1.4.0
+If you do not have modern NVIDIA graphics card, to install CPU version, just remove the following line from requirements.txt file:
+```
+tensorflow-gpu==1.4.0
+```
 
 Run anaconda prompt, change dir to C:\rtlsdr, then run:
 ```
