@@ -63,8 +63,6 @@ E.g., if you want to train only WFM and OTHER classes, delete everything, except
 - /testing_data/wfm/
 - /testing_data/other/
 
-It is better to obtain different samples of signals at different frequencies, gain levels. Edit [prepare_data.py] and run it again.
-
 Cleanup previous model checkpoint before starting a new train (otherwise it will continue training old model).
 ```
 cleanup.cmd
@@ -75,4 +73,7 @@ Finally, we may now run training (of course, we are still inside anaconda prompt
 python train.py
 ```
 
-Best decision is to stop the training [ctrl+c], when validation loss becomes 0.05 - 0.01 or below.
+Best decision is to stop the training [ctrl+c], when validation loss becomes 0.1 - 0.01 or below. Lowest values shows better performance.
+
+Also, it is better to obtain different samples of signals at different frequencies, gain levels. Edit [prepare_data.py] and run it again.
+Then train the classifier again to see the difference. Feel free to sample your own signal classes to train a bigger model.
