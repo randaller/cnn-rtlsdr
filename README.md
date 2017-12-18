@@ -124,5 +124,5 @@ I have adapted network to match paper one, and graph now becomes:
 Conv2D (64*1*3) -> Conv2D (16*2*3) -> Dense (128) -> Dense (output)
 ```
 
-Feeding it with 1/4 sec raw IQ samples, sampled at 2.4 MSPS, and then decimated to a constant value of 48, left 12500 Hz bandwith for classification,
+Feeding it with 1/4 sec raw IQ samples, sampled at 2.4 MSPS, and then decimated to a constant value of 48, left 12500 Hz bandwidth for classification,
 but wider signals, such as wfm (200 kHz) are also learnable by network. This is possible because (I hope) IQ spiral still represents carrier especialities.
