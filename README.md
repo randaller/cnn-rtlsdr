@@ -63,7 +63,7 @@ E.g., if you want to train only WFM and OTHER classes, delete everything, except
 - /testing_data/wfm/
 - /testing_data/other/
 
-It is better to obtain different samples of signals at different frequencies, gain levels etc. Edit prepare_data.py and run again, etc.
+It is better to obtain different samples of signals at different frequencies, gain levels. Edit [prepare_data.py] and run it again.
 
 Cleanup previous model checkpoint before starting a new train (otherwise it will continue training old model).
 ```
