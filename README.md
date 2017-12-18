@@ -16,11 +16,9 @@ pip install -r requirements.txt
 ```
 
 Only for CUDA version of Tensorflow, if you have installed CPU version, skip these steps:
-	
-	1. Download and install CUDA 8 Toolkit: https://developer.nvidia.com/cuda-80-ga2-download-archive
-
-	2. Download CUDNN for Toolkit 8. https://developer.nvidia.com/cudnn
-	Extract file cudnn64_6.dll from zip into C:\Windows folder.
+- Download and install CUDA 8 Toolkit: https://developer.nvidia.com/cuda-80-ga2-download-archive
+- Download CUDNN for Toolkit 8. https://developer.nvidia.com/cudnn
+- Extract file [bin\cudnn64_6.dll] from zip into C:\Windows folder.
 
 Last step is to copy 2 files from x64!!! osmocom rtl-sdr drivers: https://osmocom.org/attachments/download/2242/RelWithDebInfo.zip
 
