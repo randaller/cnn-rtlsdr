@@ -44,7 +44,7 @@ python predict_scan.py --help
 
 ### TRAIN YOUR OWN DATA
 
-To train your own model, edit the file [prepare_data.py] to set own frequencies and ppm level (lines 40-41).
+To train your own model, edit the settings in file [prepare_data.py] to set own frequencies of local stations and ppm error.
 
 Then to obtain some samples run:
 ```
