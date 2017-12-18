@@ -1,6 +1,8 @@
 # CNN-rtlsdr
 Deep learning signal classification using rtl-sdr dongle.
 
+Current pre-trained model is able to classify 4 kinds of signals: WFM, TV Secam carrier, DMR signal and "Others".
+
 ### TEST WITH PRETRAINED MODEL
 
 Unpack software archive into some folder, e.g. C:\rtlsdr
