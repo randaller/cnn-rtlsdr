@@ -27,10 +27,9 @@ Reboot your system.
 
 Now open your anaconda prompt again, change folder to C:\rtlsdr and run:
 ```
-python predict_scan.py       [to scan entire band and predict signal types]
+python predict_scan.py
 ```
-
-, or the full version scan:
+to scan entire band and predict signal types , or the full version scan:
 ```
 python predict_scan.py --start 85000000 --stop 108000000 --step 50000 --gain 20 --ppm 56 --threshold 0.9955
 ```
