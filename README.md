@@ -52,6 +52,13 @@ python predict_scan.py --help
 ### TRAIN YOUR OWN DATA
 
 To train your own model, edit the settings in file [prepare_data.py] to set own frequencies of local stations and ppm error.
+```
+sdr.err_ppm = 56  # change it to yours
+sdr.gain = 20     # change it to yours, it is better to obtain samples at different gain levels
+
+iq_samples = read_samples(sdr, 95000000)   # put here frequency of your local WFM station
+iq_samples = read_samples(sdr, 147337500)  # put here your local DMR frequency
+```
 
 Then to obtain some samples run:
 ```
