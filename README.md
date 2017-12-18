@@ -54,7 +54,7 @@ Then to obtain some samples run:
 python prepare_data.py
 ```
 
-Now do not forget to move about 20% of samples from /training_data/***/ folders to their corresponding folders in /testing_data/***/
+Now do not forget to move about 20-30% of samples from [/training_data/CLASS_LABEL/] to their corresponding [/testing_data/CLASS_LABEL/] folders.
 
 Delete unnecessary folders under [/testing_data] and [/training_data] as they are responsible for classificator.
 E.g., if you want to train only WFM and OTHER classes, delete everything, except of:
@@ -63,8 +63,13 @@ E.g., if you want to train only WFM and OTHER classes, delete everything, except
 - /testing_data/wfm/
 - /testing_data/other/
 
-It is better to obtain different samples of signals at different frequencies, gain levels etc.
-	
+It is better to obtain different samples of signals at different frequencies, gain levels etc. Edit prepare_data.py and run again, etc.
+
+Cleanup previous model checkpoint before starting a new train (otherwise it will continue training old model).
+```
+cleanup.cmd
+```
+
 Finally, we may now run training (of course, we are still inside anaconda prompt):
 ```
 python train.py
