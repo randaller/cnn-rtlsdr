@@ -40,7 +40,7 @@ to scan entire band and predict signal types , or the full version scan:
 python predict_scan.py --start 85000000 --stop 108000000 --step 50000 --gain 20 --ppm 56 --threshold 0.9955
 ```
 
-[![cnn-rtlsdr in action](https://img.youtube.com/vi/OrSL9dgzlcA/200.jpg)](https://www.youtube.com/watch?v=OrSL9dgzlcA)
+[![cnn-rtlsdr in action](https://img.youtube.com/vi/OrSL9dgzlcA/0.jpg)](https://www.youtube.com/watch?v=OrSL9dgzlcA)
 
 Some help also available:
 ```
