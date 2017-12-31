@@ -65,8 +65,6 @@ Then to obtain some samples run:
 python prepare_data.py
 ```
 
-Now do not forget to move about 20-30% of samples from [/training_data/CLASS_LABEL/] to their corresponding [/testing_data/CLASS_LABEL/] folders.
-
 Delete unnecessary folders under [/testing_data] and [/training_data] as they are responsible for classificator.
 E.g., if you want to train only WFM and OTHER classes, delete everything, except of:
 - /training_data/wfm/

@@ -34,12 +34,11 @@ def collect_samples(freq, classname):
 sdr = RtlSdr()
 sdr.sample_rate = sample_rate = 2400000
 decimation_rate = 48
-sdr.err_ppm = 56   # change it to yours
+sdr.err_ppm = 0    # change it to yours
 sdr.gain = 'auto'  # change it to yours, it is better to obtain samples at 'auto' from an rtl-sdr with poor antenna
 
 collect_samples(95000000, "wfm")
 collect_samples(104000000, "wfm")
-collect_samples(942200000, "gsm")
 collect_samples(147337500, "dmr")
 collect_samples(49250000, "tv")
 
