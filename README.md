@@ -125,7 +125,7 @@ Feeding it with 1/4 sec raw IQ samples, sampled at 2.4 MSPS, and then decimated 
 
 ### KERAS VERSION
 
-This is an optimized version of network, that reaches 99.97% accuracy while training.
+This is an optimized version of network, that reaches 99% accuracy while training.
 
 ```
 python prepare_data.py
