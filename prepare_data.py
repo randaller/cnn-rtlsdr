@@ -1,5 +1,5 @@
 from rtlsdr import RtlSdr
-import time, random, string
+import time, random, string, os
 import numpy as np
 import scipy.signal as signal
 
@@ -20,6 +20,8 @@ def randomword(length):
 
 
 def collect_samples(freq, classname):
+    os.makedirs("training_data/" + classname, exist_ok=True)
+    os.makedirs("testing_data/" + classname, exist_ok=True)
     for i in range(0, 1000):
         iq_samples = read_samples(sdr, freq)
         iq_samples = signal.decimate(iq_samples, decimation_rate, zero_phase=True)
@@ -34,11 +36,13 @@ def collect_samples(freq, classname):
 sdr = RtlSdr()
 sdr.sample_rate = sample_rate = 2400000
 decimation_rate = 48
-sdr.err_ppm = 0    # change it to yours
+sdr.err_ppm = 56   # change it to yours
 sdr.gain = 'auto'  # change it to yours, it is better to obtain samples at 'auto' from an rtl-sdr with poor antenna
 
+# collect_samples(422600000, "tetra")
 collect_samples(95000000, "wfm")
 collect_samples(104000000, "wfm")
+collect_samples(942200000, "gsm")
 collect_samples(147337500, "dmr")
 collect_samples(49250000, "tv")
 
