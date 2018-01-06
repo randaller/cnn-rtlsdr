@@ -37,7 +37,7 @@ sdr = RtlSdr()
 sdr.sample_rate = sample_rate = 2400000
 decimation_rate = 48
 sdr.err_ppm = 56   # change it to yours
-sdr.gain = 'auto'  # change it to yours, it is better to obtain samples at 'auto' from an rtl-sdr with poor antenna
+sdr.gain = 'auto'
 
 # collect_samples(422600000, "tetra")
 collect_samples(95000000, "wfm")
