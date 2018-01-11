@@ -131,3 +131,5 @@ This is an optimized version of network, that reaches 99% accuracy while trainin
 python prepare_data.py
 python train_keras.py
 ```
+
+![Keras network screenshot](https://github.com/randaller/cnn-rtlsdr/blob/master/screenshot_keras.png)
