@@ -17,6 +17,7 @@ tensorflow-gpu==1.4.0
 
 Run anaconda prompt, change dir to C:\rtlsdr, then run:
 ```
+conda install pip
 pip install -r requirements.txt
 ```
 
