@@ -50,6 +50,10 @@ Some help also available:
 python predict_scan.py --help
 ```
 
+### LINUX INSTALLATION
+
+Linux installation issues discussed here: https://github.com/randaller/cnn-rtlsdr/issues/1
+
 ### TRAIN YOUR OWN DATA
 
 To train your own model, edit the settings in file [prepare_data.py] to set own frequencies of local stations and ppm error.
