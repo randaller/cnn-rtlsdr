@@ -3,7 +3,6 @@ anaconda-client==1.6.5
 anaconda-navigator==1.6.9
 anaconda-project==0.8.0
 asgiref==1.1.2
-asn1crypto==0.22.0
 astroid==1.5.3
 astropy==2.0.2
 attrs==17.3.0
@@ -31,7 +30,6 @@ comtypes==1.1.2
 conda==4.3.30
 constantly==15.1.0
 contextlib2==0.5.5
-cryptography==2.0.3
 cycler==0.10.0
 Cython==0.26.1
 cytoolz==0.8.2
