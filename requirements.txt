@@ -123,9 +123,6 @@ pygame==1.9.3
 Pygments==2.2.0
 pylint==1.7.2
 pymongo==3.5.1
-pyodbc==4.0.17
-pyopengl==3.1.1a1
-pyOpenSSL==17.2.0
 pyparsing==2.2.0
 pyrtlsdr==0.2.7
 pyserial==3.4
