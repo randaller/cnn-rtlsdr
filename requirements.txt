@@ -132,8 +132,6 @@ PyWavelets==0.5.2
 pywin32==221
 PyYAML==3.12
 pyzmq==16.0.2
-requests==2.18.4
-requests-oauthlib==0.8.0
 ruamel-yaml==0.11.14
 ruamel.yaml==0.15.0
 scikit-image==0.13.0
