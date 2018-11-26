@@ -60,11 +60,12 @@ sdr.gain = 'auto'
 correct_predictions = 0
 
 
-def read_samples(freq):
+def read_samples(sdr, freq):
     f_offset = 250000  # shifted tune to avoid DC
     sdr.center_freq = freq - f_offset
     time.sleep(0.06)
-    iq_samples = sdr.read_samples(sample_rate * 0.25)  # sample 1/4 sec
+    iq_samples = sdr.read_samples(1221376)
+    iq_samples = iq_samples[0:600000]
     fc1 = np.exp(-1.0j * 2.0 * np.pi * f_offset / sample_rate * np.arange(len(iq_samples)))  # shift down 250kHz
     iq_samples = iq_samples * fc1
     return iq_samples
