@@ -60,7 +60,7 @@ sdr.gain = 'auto'
 correct_predictions = 0
 
 
-def read_samples(sdr, freq):
+def read_samples(freq):
     f_offset = 250000  # shifted tune to avoid DC
     sdr.center_freq = freq - f_offset
     time.sleep(0.06)
