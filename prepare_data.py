@@ -4,15 +4,24 @@ import numpy as np
 import scipy.signal as signal
 
 
+# def read_samples(sdr, freq):
+#    F_offset = 250000  # shifted tune to avoid DC
+#    sdr.center_freq = freq - F_offset
+#    time.sleep(0.06)
+#    iq_samples = sdr.read_samples(sample_rate * 0.25)  # sample 1/4 sec
+#    fc1 = np.exp(-1.0j * 2.0 * np.pi * F_offset / sample_rate * np.arange(len(iq_samples)))  # shift down 250kHz
+#    iq_samples = iq_samples * fc1
+#    return iq_samples
+
 def read_samples(sdr, freq):
-    F_offset = 250000  # shifted tune to avoid DC
-    sdr.center_freq = freq - F_offset
+    f_offset = 250000  # shifted tune to avoid DC
+    sdr.center_freq = freq - f_offset
     time.sleep(0.06)
-    iq_samples = sdr.read_samples(sample_rate * 0.25)  # sample 1/4 sec
-    fc1 = np.exp(-1.0j * 2.0 * np.pi * F_offset / sample_rate * np.arange(len(iq_samples)))  # shift down 250kHz
+    iq_samples = sdr.read_samples(1221376)
+    iq_samples = iq_samples[0:600000]
+    fc1 = np.exp(-1.0j * 2.0 * np.pi * f_offset / sample_rate * np.arange(len(iq_samples)))  # shift down 250kHz
     iq_samples = iq_samples * fc1
     return iq_samples
-
 
 def randomword(length):
     letters = string.ascii_lowercase
