@@ -138,7 +138,6 @@ snowballstemmer==1.2.1
 sortedcollections==0.5.3
 sortedcontainers==1.5.7
 spyder==3.2.3
-SQLAlchemy==1.1.13
 statsmodels==0.8.0
 sympy==1.1.1
 tables==3.4.2
