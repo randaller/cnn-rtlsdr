@@ -158,7 +158,6 @@ unicodecsv==0.14.1
 visvis==1.10.0
 wcwidth==0.1.7
 webencodings==0.5.1
-Werkzeug==0.12.2
 widgetsnbextension==3.0.2
 win-inet-pton==1.0.1
 win-unicode-console==0.5
