@@ -98,7 +98,7 @@ pathlib2==2.3.0
 patsy==0.4.1
 pep8==1.7.0
 pickleshare==0.7.4
-Pillow==4.2.1
+Pillow==6.2.0
 pkginfo==1.4.1
 ply==3.10
 progress==1.3
