@@ -2,7 +2,7 @@ asgiref==1.1.2
 astroid==1.5.3
 astropy==2.0.2
 attrs==17.3.0
-autobahn==17.10.1
+autobahn==20.12.3
 Automat==0.6.0
 babel==2.5.0
 backports.shutil-get-terminal-size==1.0.0
