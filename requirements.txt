@@ -123,7 +123,7 @@ pytest==3.2.1
 python-dateutil==2.6.1
 pytz==2017.2
 PyWavelets==0.5.2
-pywin32==221
+pywin32==301
 pyzmq==16.0.2
 ruamel-yaml==0.11.14
 ruamel.yaml==0.15.0
