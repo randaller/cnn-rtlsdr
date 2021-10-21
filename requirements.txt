@@ -4,7 +4,7 @@ astropy==2.0.2
 attrs==17.3.0
 autobahn==17.10.1
 Automat==0.6.0
-babel==2.5.0
+babel==2.9.1
 backports.shutil-get-terminal-size==1.0.0
 beautifulsoup4==4.6.0
 bitarray==0.8.1
