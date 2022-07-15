@@ -33,7 +33,7 @@ dask==0.15.2
 datashape==0.5.4
 decorator==4.1.2
 distlib==0.2.5
-distributed==1.18.3
+distributed==2021.10.0
 docutils==0.14
 entrypoints==0.2.3
 enum34==1.1.6
